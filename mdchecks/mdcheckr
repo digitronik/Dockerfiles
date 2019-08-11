@@ -1,0 +1,3 @@
+#!/bin/sh
+IMAGE=digitronik/mdchecks
+exec docker run --rm -i -v "$PWD":/home/node "$IMAGE" mdcheckr "$@"
